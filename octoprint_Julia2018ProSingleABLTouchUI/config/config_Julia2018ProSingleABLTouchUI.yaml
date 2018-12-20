@@ -2,7 +2,7 @@ api:
   enabled: true
   key: B508534ED20348F090B4D0AD637D3660
 appearance:
-  name: Julia Pro Single
+  name: Julia Pro Single ABL
 devel:
   cache:
     enabled: true
@@ -84,12 +84,12 @@ printerProfiles:
     heatedBed: true
     id: _default
     model: Fracktal Works Julia Pro Series
-    name: Julia Pro Single
+    name: Julia Pro Single ABL
     volume:
       custom_box: false
       depth: 395.0
       formFactor: rectangular
-      height: 405.0
+      height: 400.0
       origin: lowerleft
       width: 400.0
 serial:

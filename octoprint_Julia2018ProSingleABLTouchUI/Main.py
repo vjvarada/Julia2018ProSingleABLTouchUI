@@ -11,7 +11,7 @@
  * Licence: AGPLv3
 *************************************************************************
 '''
-import mainGUI_pro_single 
+import mainGUI_pro_single_abl 
 import keyboard
 import dialog
 import styles
@@ -248,10 +248,10 @@ class ClickableLineEdit(QtGui.QLineEdit):
         self.emit(QtCore.SIGNAL("clicked()"))
 
 
-class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single.Ui_MainWindow):
+class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
     '''
     Main GUI Workhorse, all slots and events defined within
-    The main implementation class that inherits methods, variables etc from mainGUI_pro_single.py and QMainWindow
+    The main implementation class that inherits methods, variables etc from mainGUI_pro_single_abl.py and QMainWindow
     '''
 
     def setupUi(self, MainWindow):
@@ -1470,7 +1470,7 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single.Ui_MainWindow):
             os.system('sudo cp -f config/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf')
             os.system('sudo rm -rf /home/pi/.octoprint/users.yaml')
             os.system('sudo rm -rf /home/pi/.octoprint/printerProfiles/*')
-            os.system('sudo cp -f config/config_Julia2018ProSingleTouchUI.yaml /home/pi/.octoprint/config.yaml')
+            os.system('sudo cp -f config/config_Julia2018ProSingleABLTouchUI.yaml /home/pi/.octoprint/config.yaml')
             self.tellAndReboot("Settings restored. Rebooting...")
 
     def restorePrintDefaults(self):

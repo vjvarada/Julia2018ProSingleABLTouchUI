@@ -1,4 +1,4 @@
 include README.md
-recursive-include octoprint_Julia2018ProSingleTouchUI/templates *
-recursive-include octoprint_Julia2018ProSingleTouchUI/config *
+recursive-include octoprint_Julia2018ProSingleABLTouchUI/templates *
+recursive-include octoprint_Julia2018ProSingleABLTouchUI/config *
 
