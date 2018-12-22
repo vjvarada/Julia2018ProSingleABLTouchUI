@@ -418,12 +418,12 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
         self.fileSelectedUSBPrintButton.pressed.connect(lambda: self.transferToLocal(prnt=True))
 
         # ControlScreen
-        self.moveYPButton.pressed.connect(lambda: octopiclient.jog(y=self.step))
-        self.moveYMButton.pressed.connect(lambda: octopiclient.jog(y=-self.step))
-        self.moveXMButton.pressed.connect(lambda: octopiclient.jog(x=-self.step))
-        self.moveXPButton.pressed.connect(lambda: octopiclient.jog(x=self.step))
-        self.moveZPButton.pressed.connect(lambda: octopiclient.jog(z=self.step))
-        self.moveZMButton.pressed.connect(lambda: octopiclient.jog(z=-self.step))
+        self.moveYPButton.pressed.connect(lambda: octopiclient.jog(y=self.step, speed=1000))
+        self.moveYMButton.pressed.connect(lambda: octopiclient.jog(y=-self.step, speed=1000))
+        self.moveXMButton.pressed.connect(lambda: octopiclient.jog(x=-self.step, speed=1000))
+        self.moveXPButton.pressed.connect(lambda: octopiclient.jog(x=self.step, speed=1000))
+        self.moveZPButton.pressed.connect(lambda: octopiclient.jog(z=self.step, speed=1000))
+        self.moveZMButton.pressed.connect(lambda: octopiclient.jog(z=-self.step, speed=1000))
         self.extruderButton.pressed.connect(lambda: octopiclient.extrude(self.step))
         self.retractButton.pressed.connect(lambda: octopiclient.extrude(-self.step))
         self.motorOffButton.pressed.connect(lambda: octopiclient.gcode(command='M18'))
@@ -1407,9 +1407,11 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
         goes to position where leveling screws can be opened
         :return:
         '''
+        octopiclient.gcode(command='M104 S200')
         octopiclient.gcode(command='M420 S0')  # Dissable mesh bed leveling for good measure
         self.stackedWidget.setCurrentWidget(self.quickStep1Page)
         octopiclient.home(['x', 'y', 'z'])
+        octopiclient.jog(x=40, y=40, absolute=True, speed=2000)
 
     def quickStep2(self):
         '''
@@ -1446,9 +1448,13 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
         :return:
         '''
         self.stackedWidget.setCurrentWidget(self.calibratePage)
+        octopiclient.home(['x', 'y', 'z'])
+        octopiclient.gcode(command='M104 S0')
 
     def cancelStep(self):
         self.stackedWidget.setCurrentWidget(self.calibratePage)
+        octopiclient.home(['x', 'y', 'z'])
+        octopiclient.gcode(command='M104 S0')
 
     ''' +++++++++++++++++++++++++++++++++++Keyboard++++++++++++++++++++++++++++++++ '''
 
