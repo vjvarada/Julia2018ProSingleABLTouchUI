@@ -342,6 +342,7 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
         self.connect(self.QtSocket, QtCore.SIGNAL('CONNECTED'), self.onServerConnected)
         self.connect(self.QtSocket, QtCore.SIGNAL('FILAMENT_SENSOR_TRIGGERED'), self.filamentSensorHandler)
         self.connect(self.QtSocket, QtCore.SIGNAL('FIRMWARE_UPDATER'), self.firmwareUpdateHandler)
+        self.connect(self.QtSocket, QtCore.SIGNAL('Z_PROBING_FAILED'), self.showProbingFailed)
 
         # Text Input events
         self.connect(self.wifiPasswordLineEdit, QtCore.SIGNAL("clicked()"),
@@ -1412,6 +1413,9 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
 
     ''' +++++++++++++++++++++++++++++++++++Calibration++++++++++++++++++++++++++++++++ '''
 
+    def showProbingFailed(self):
+        self.tellAndReboot("Bed position is not calibrated. Please run calibration wizard after restart.")
+
     def updateEEPROMProbeOffset(self, offset):
         '''
         Sets the spinbox value to have the value of the Z offset from the printer.
@@ -1630,6 +1634,8 @@ class QtWebsocket(QtCore.QThread):
                 for item in data["current"]["messages"]:
                     if 'M851' in item:
                         self.emit(QtCore.SIGNAL('Z_PROBE_OFFSET'), item[item.index('Z') + 1:].split(' ', 1)[0])
+                    if 'PROBING_FAILED' in item:
+                        self.emit(QtCore.SIGNAL('Z_PROBING_FAILED'))
 
             if data["current"]["state"]["text"]:
                 self.emit(QtCore.SIGNAL('STATUS'), data["current"]["state"]["text"])
