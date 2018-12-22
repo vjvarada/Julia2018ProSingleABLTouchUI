@@ -1487,6 +1487,8 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
         :return:
         '''
         self.stackedWidget.setCurrentWidget(self.calibratePage)
+        octopiclient.home(['x', 'y', 'z'])
+        octopiclient.gcode(command='M104 S0')
 
     def cancelStep(self):
         self.stackedWidget.setCurrentWidget(self.calibratePage)
