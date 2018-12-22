@@ -173,7 +173,7 @@ QStatusBar::item {
 background-color: rgb(40, 40, 40);</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>25</number>
     </property>
     <widget class="QWidget" name="loadingPage">
      <widget class="QLabel" name="LoadingLabel">
@@ -1610,7 +1610,7 @@ QScrollBar::down-arrow:vertical {
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>398</width>
+         <width>478</width>
          <height>630</height>
         </rect>
        </property>
@@ -4666,7 +4666,7 @@ QToolButton:focus {
        <string notr="true">color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
-       <string>We start by calibrating the print bed's level. A perfectly leveled bed is essential to get reliable printing performance. Wait for all moves to finish and click Next</string>
+       <string>Homing In progress. Wait for all moves to finish, make sure nozzle tip is clean and then click Next</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>
@@ -4814,7 +4814,7 @@ QPushButton:focus {
        <string notr="true">color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
-       <string>Loosen or tighten the front right leveling screw untill leveling light is just turns Red.</string>
+       <string>Loosen or tighten the front right leveling screw untill leveling light just turns solid RED.</string>
       </property>
       <property name="wordWrap">
        <bool>true</bool>

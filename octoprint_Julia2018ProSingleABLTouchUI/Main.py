@@ -418,12 +418,12 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
         self.fileSelectedUSBPrintButton.pressed.connect(lambda: self.transferToLocal(prnt=True))
 
         # ControlScreen
-        self.moveYPButton.pressed.connect(lambda: octopiclient.jog(y=self.step))
-        self.moveYMButton.pressed.connect(lambda: octopiclient.jog(y=-self.step))
-        self.moveXMButton.pressed.connect(lambda: octopiclient.jog(x=-self.step))
-        self.moveXPButton.pressed.connect(lambda: octopiclient.jog(x=self.step))
-        self.moveZPButton.pressed.connect(lambda: octopiclient.jog(z=self.step))
-        self.moveZMButton.pressed.connect(lambda: octopiclient.jog(z=-self.step))
+        self.moveYPButton.pressed.connect(lambda: octopiclient.jog(y=self.step, speed=1000))
+        self.moveYMButton.pressed.connect(lambda: octopiclient.jog(y=-self.step, speed=1000))
+        self.moveXMButton.pressed.connect(lambda: octopiclient.jog(x=-self.step, speed=1000))
+        self.moveXPButton.pressed.connect(lambda: octopiclient.jog(x=self.step, speed=1000))
+        self.moveZPButton.pressed.connect(lambda: octopiclient.jog(z=self.step, speed=1000))
+        self.moveZMButton.pressed.connect(lambda: octopiclient.jog(z=-self.step, speed=1000))
         self.extruderButton.pressed.connect(lambda: octopiclient.extrude(self.step))
         self.retractButton.pressed.connect(lambda: octopiclient.extrude(-self.step))
         self.motorOffButton.pressed.connect(lambda: octopiclient.gcode(command='M18'))
@@ -683,27 +683,66 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
 
     ''' +++++++++++++++++++++++++++++++++OTA Update+++++++++++++++++++++++++++++++++++ '''
 
+    def getFirmwareVersion(self):
+        try:
+            headers = {'X-Api-Key': apiKey}
+            req = requests.get('http://{}/plugin/JuliaFirmwareUpdater/hardware/version'.format(ip), headers=headers)
+            data = req.json()
+            # print(data)
+            if req.status_code == requests.codes.ok:
+                info = u'\u2713' if not data["update_available"] else u"\u2717"    # icon
+                info += " Firmware: "
+                info += "Unknown" if not data["variant_name"] else data["variant_name"]
+                info += "\n"
+                if data["variant_name"]:
+                    info += "   Installed: "
+                    info += "Unknown" if not data["version_board"] else data["version_board"]
+                info += "\n"
+                info += "" if not data["version_repo"] else "   Available: " + data["version_repo"]
+                return info
+        except:
+            print("Error accessing /plugin/JuliaFirmwareUpdater/hardware/version")
+            pass
+        return u'\u2713' + "Firmware: Unknown\n"
+
     def displayVersionInfo(self):
         self.updateListWidget.clear()
         updateAvailable = False
         self.performUpdateButton.setDisabled(True)
-        self.stackedWidget.setCurrentWidget(self.OTAUpdatePage)
+
+        self.updateListWidget.addItem(self.getFirmwareVersion())
+
         data = octopiclient.getSoftwareUpdateInfo()
         if data:
             for item in data["information"]:
-                if not data["information"][item]["updateAvailable"]:
-                    self.updateListWidget.addItem(u'\u2713' + data["information"][item]["displayName"] +
-                                                  "  " + data["information"][item]["displayVersion"] + "\n"
-                                                  + "   Available: " +
-                                                  data["information"][item]["information"]["remote"]["value"])
+                # print(item)
+                plugin = data["information"][item]
+                info = u'\u2713' if not plugin["updateAvailable"] else u"\u2717"    # icon
+                info += plugin["displayName"] + "  " + plugin["displayVersion"] + "\n"
+                info += "   Available: "
+                if "information" in plugin and "remote" in plugin["information"] and plugin["information"]["remote"]["value"] is not None:
+                    info += plugin["information"]["remote"]["value"]
                 else:
+                    info += "Unknown"
+                self.updateListWidget.addItem(info)
+
+                if plugin["updateAvailable"]:
                     updateAvailable = True
-                    self.updateListWidget.addItem(u"\u2717" + data["information"][item]["displayName"] +
-                                                  "  " + data["information"][item]["displayVersion"] + "\n"
-                                                  + "   Available: " +
-                                                  data["information"][item]["information"]["remote"]["value"])
+
+                # if not updatable:
+                #     self.updateListWidget.addItem(u'\u2713' + data["information"][item]["displayName"] +
+                #                                   "  " + data["information"][item]["displayVersion"] + "\n"
+                #                                   + "   Available: " +
+                #                                   )
+                # else:
+                #     updateAvailable = True
+                #     self.updateListWidget.addItem(u"\u2717" + data["information"][item]["displayName"] +
+                #                                   "  " + data["information"][item]["displayVersion"] + "\n"
+                #                                   + "   Available: " +
+                #                                   data["information"][item]["information"]["remote"]["value"])
         if updateAvailable:
             self.performUpdateButton.setDisabled(False)
+        self.stackedWidget.setCurrentWidget(self.OTAUpdatePage)
 
     def softwareUpdateResult(self, data):
         messageText = ""
@@ -1407,9 +1446,11 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
         goes to position where leveling screws can be opened
         :return:
         '''
+        octopiclient.gcode(command='M104 S200')
         octopiclient.gcode(command='M420 S0')  # Dissable mesh bed leveling for good measure
         self.stackedWidget.setCurrentWidget(self.quickStep1Page)
         octopiclient.home(['x', 'y', 'z'])
+        octopiclient.jog(x=40, y=40, absolute=True, speed=2000)
 
     def quickStep2(self):
         '''
@@ -1449,6 +1490,8 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
 
     def cancelStep(self):
         self.stackedWidget.setCurrentWidget(self.calibratePage)
+        octopiclient.home(['x', 'y', 'z'])
+        octopiclient.gcode(command='M104 S0')
 
     ''' +++++++++++++++++++++++++++++++++++Keyboard++++++++++++++++++++++++++++++++ '''
 
