@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\mainGUI_pro_single_abl.ui'
+
+# Form implementation generated from reading ui file 'g:\FracktalWorks\Julia2018ProSingleABLTouchUI\octoprint_Julia2018ProSingleABLTouchUI\mainGUI_pro_single_abl.ui'
 #
 # Created by: PyQt4 UI code generator 4.11.4
 #
@@ -839,7 +840,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName(_fromUtf8("scrollArea"))
         self.scrollAreaWidgetContents = QtGui.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 398, 630))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 478, 630))
         self.scrollAreaWidgetContents.setObjectName(_fromUtf8("scrollAreaWidgetContents"))
         self.verticalLayout = QtGui.QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout.setContentsMargins(0, 0, 3, 0)
