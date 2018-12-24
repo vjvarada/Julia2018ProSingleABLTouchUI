@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c70e16e7-517b-4550-9f83-d2a2425b0e6f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/mainGUI_pro_single_abl.ui" afterPath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/mainGUI_pro_single_abl.ui" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py" afterPath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/__init__.py" afterPath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
@@ -29,8 +27,8 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="420" column="92" selection-start-line="420" selection-start-column="92" selection-end-line="420" selection-end-column="92" />
+            <state relative-caret-position="1584">
+              <caret line="1479" column="11" selection-start-line="1479" selection-start-column="11" selection-end-line="1479" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -39,7 +37,7 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
+            <state relative-caret-position="452">
               <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
               <folding />
             </state>
@@ -49,8 +47,8 @@
       <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+            <state relative-caret-position="242">
+              <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -71,10 +69,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2391" />
-    <option name="y" value="-9" />
-    <option name="width" value="2418" />
-    <option name="height" value="1331" />
+    <option name="x" value="-9" />
+    <option name="width" value="1936" />
+    <option name="height" value="1051" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -101,8 +98,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -137,6 +132,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -156,10 +153,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2391" y="-9" width="2418" height="1331" extended-state="0" />
+    <frame x="-9" y="0" width="1936" height="1051" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973932" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -196,6 +193,30 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9240">
+          <caret line="420" column="92" selection-start-line="420" selection-start-column="92" selection-end-line="420" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1672">
+          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -220,15 +241,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="420" column="92" selection-start-line="420" selection-start-column="92" selection-end-line="420" selection-end-column="92" />
+        <state relative-caret-position="1584">
+          <caret line="1479" column="11" selection-start-line="1479" selection-start-column="11" selection-end-line="1479" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
+        <state relative-caret-position="452">
           <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
           <folding />
         </state>
@@ -236,8 +257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        <state relative-caret-position="242">
+          <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
           <folding />
         </state>
       </provider>

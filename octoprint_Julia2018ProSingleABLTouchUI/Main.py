@@ -1454,13 +1454,15 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
         octopiclient.gcode(command='M420 S0')  # Dissable mesh bed leveling for good measure
         self.stackedWidget.setCurrentWidget(self.quickStep1Page)
         octopiclient.home(['x', 'y', 'z'])
-        octopiclient.jog(x=40, y=40, absolute=True, speed=2000)
+        octopiclient.jog(x=200, y=40, absolute=True, speed=2000)
+        octopiclient.jog(z=10, absolute=True, speed=1500)
 
     def quickStep2(self):
         '''
         levels first position (RIGHT)
         :return:
         '''
+        octopiclient.jog(z=15, absolute=True, speed=1500)
         self.stackedWidget.setCurrentWidget(self.quickStep2Page)
         octopiclient.jog(x=calibrationPosition['X1'], y=calibrationPosition['Y1'], absolute=True, speed=2000)
         octopiclient.jog(z=0, absolute=True, speed=1500)
