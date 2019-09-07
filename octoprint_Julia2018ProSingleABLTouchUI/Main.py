@@ -37,6 +37,7 @@ import requests
 import re
 
 import RPi.GPIO as GPIO
+from collections import OrderedDict
 
 
 GPIO.setmode(GPIO.BCM)  # Use the board numbering scheme
@@ -87,17 +88,23 @@ apiKey = 'B508534ED20348F090B4D0AD637D3660'
 
 file_name = ''
 Development = True
-filaments = {"ABS": 220,
-             "PLA": 200,
-             "NinjaFlex": 220,
-             "PolyCarbonate": 280,
-             "XT-Copolymer": 240,
-             "FilaFlex": 210,
-             "Nylon": 240,
-             "Scaffold": 210,
-             "WoodFill": 200,
-             "CopperFill": 180
-             }
+
+
+filaments = [
+                ("PLA", 200),
+                ("ABS", 220),
+                ("PETG", 230),
+                ("PVA", 220),
+                ("TPU", 230),
+                ("Nylon", 250),
+                ("PolyCarbonate", 275),
+                ("HIPS", 220),
+                ("WoodFill", 200),
+                ("CopperFill", 180),
+                ("Breakaway", 230)
+]
+
+filaments = OrderedDict(filaments)
 
 calibrationPosition = {'X1': 360, 'Y1': 42,     # right
                        'X2': 50, 'Y2': 42,      # left
@@ -592,7 +599,8 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
         if 'pause_print' in data:
             pause_print = data["pause_print"]
 
-        if triggered_extruder0:
+        if triggered_extruder0 and self.stackedWidget.currentWidget() not in [self.changeFilamentPage, self.changeFilamentProgressPage,
+                                  self.changeFilamentExtrudePage, self.changeFilamentRetractPage]:
             if dialog.WarningOk(self, "Filament outage in Extruder 0"):
                 pass
 
@@ -1021,8 +1029,9 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
     ''' +++++++++++++++++++++++++++++++++Change Filament+++++++++++++++++++++++++++++++ '''
 
     def unloadFilament(self):
-        octopiclient.setToolTemperature(
-            filaments[str(self.changeFilamentComboBox.currentText())])
+        if self.changeFilamentComboBox.findText("Loaded Filament") == -1:
+            octopiclient.setToolTemperature(
+                filaments[str(self.changeFilamentComboBox.currentText())])
         self.stackedWidget.setCurrentWidget(self.changeFilamentProgressPage)
         self.changeFilamentStatus.setText("Heating , Please Wait...")
         self.changeFilamentNameOperation.setText("Unloading {}".format(str(self.changeFilamentComboBox.currentText())))
@@ -1031,8 +1040,9 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
         self.loadFlag = False
 
     def loadFilament(self):
-        octopiclient.setToolTemperature(
-            filaments[str(self.changeFilamentComboBox.currentText())])
+        if self.changeFilamentComboBox.findText("Loaded Filament") == -1:
+            octopiclient.setToolTemperature(
+                filaments[str(self.changeFilamentComboBox.currentText())])
         self.stackedWidget.setCurrentWidget(self.changeFilamentProgressPage)
         self.changeFilamentStatus.setText("Heating , Please Wait...")
         self.changeFilamentNameOperation.setText("Loading {}".format(str(self.changeFilamentComboBox.currentText())))
@@ -1044,6 +1054,11 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
         self.stackedWidget.setCurrentWidget(self.changeFilamentPage)
         self.changeFilamentComboBox.clear()
         self.changeFilamentComboBox.addItems(filaments.keys())
+        if self.tool0TargetTemperature > 0 and self.printerStatusText in ["Printing","Paused"]:
+            self.changeFilamentComboBox.addItem("Loaded Filament")
+            index = self.changeFilamentComboBox.findText("Loaded Filament")
+            if index >= 0 :
+                self.changeFilamentComboBox.setCurrentIndex(index)
 
     def changeFilamentCancel(self):
         self.changeFilamentHeatingFlag = False
