@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c70e16e7-517b-4550-9f83-d2a2425b0e6f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py" afterPath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/__init__.py" afterPath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/config/config_Julia2018ProSingleABLTouchUI.yaml" afterPath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/config/config_Julia2018ProSingleABLTouchUI.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
     </list>
     <ignored path="Julia2018ProSingleABLTouchUI.iws" />
@@ -28,7 +27,7 @@
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
+            <state relative-caret-position="9086">
               <caret line="1032" column="44" selection-start-line="1032" selection-start-column="44" selection-end-line="1032" selection-end-column="44" />
               <folding>
                 <element signature="e#19#285#1" expanded="false" />
@@ -288,7 +287,7 @@
       <file leaf-file-name="octoprintAPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/octoprintAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14498">
+            <state relative-caret-position="813">
               <caret line="662" column="56" selection-start-line="662" selection-start-column="56" selection-end-line="662" selection-end-column="65" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -297,21 +296,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wpa_supplicant.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/config/wpa_supplicant.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config_Julia2018ProSingleABLTouchUI.yaml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config_Julia2018ProSingleABLTouchUI.yaml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/config/config_Julia2018ProSingleABLTouchUI.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="295">
+              <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -330,18 +319,18 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="66" column="52" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+            <state relative-caret-position="615">
+              <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+            <state relative-caret-position="374">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -366,15 +355,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py" />
+        <option value="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/config/config_Julia2018ProSingleABLTouchUI.yaml" />
         <option value="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/__init__.py" />
         <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
+    <option name="x" value="989" />
+    <option name="width" value="940" />
     <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -402,6 +391,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -455,7 +445,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -625,10 +614,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1060" extended-state="0" />
+    <frame x="989" y="0" width="940" height="1060" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1015625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21149674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -665,6 +654,322 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9086">
+          <caret line="1032" column="44" selection-start-line="1032" selection-start-column="44" selection-end-line="1032" selection-end-column="44" />
+          <folding>
+            <element signature="e#19#285#1" expanded="false" />
+            <element signature="e#286#315#0" expanded="true" />
+            <element signature="e#907#2278#1" expanded="false" />
+            <element signature="e#2280#2360#0" expanded="false" />
+            <element signature="e#3061#3229#0" expanded="false" />
+            <element signature="e#3303#3337#0" expanded="false" />
+            <element signature="e#3329#3337#0" expanded="false" />
+            <element signature="e#3365#3685#0" expanded="false" />
+            <element signature="e#3365#3431#1" expanded="false" />
+            <element signature="e#3560#3662#0" expanded="false" />
+            <element signature="e#3714#4360#0" expanded="false" />
+            <element signature="e#3727#4328#0" expanded="false" />
+            <element signature="e#4390#4681#0" expanded="false" />
+            <element signature="e#4403#4646#0" expanded="false" />
+            <element signature="e#4705#4953#0" expanded="false" />
+            <element signature="e#4718#4918#0" expanded="false" />
+            <element signature="e#4979#5232#0" expanded="false" />
+            <element signature="e#4992#5197#0" expanded="false" />
+            <element signature="e#5269#5605#0" expanded="false" />
+            <element signature="e#5308#5448#0" expanded="false" />
+            <element signature="e#5493#5605#0" expanded="false" />
+            <element signature="e#5637#5686#1" expanded="false" />
+            <element signature="e#5818#5941#0" expanded="false" />
+            <element signature="e#5866#5941#0" expanded="false" />
+            <element signature="e#5994#6117#0" expanded="false" />
+            <element signature="e#6042#6117#0" expanded="false" />
+            <element signature="e#6248#6961#0" expanded="false" />
+            <element signature="e#6301#6557#0" expanded="false" />
+            <element signature="e#6589#6632#0" expanded="false" />
+            <element signature="e#6676#6908#0" expanded="false" />
+            <element signature="e#6957#6961#0" expanded="false" />
+            <element signature="e#7010#7197#0" expanded="false" />
+            <element signature="e#7046#7084#0" expanded="false" />
+            <element signature="e#7138#7197#0" expanded="false" />
+            <element signature="e#7280#7469#1" expanded="false" />
+            <element signature="e#7514#8949#0" expanded="false" />
+            <element signature="e#8983#10159#0" expanded="false" />
+            <element signature="e#8983#9076#1" expanded="false" />
+            <element signature="e#9822#10159#0" expanded="false" />
+            <element signature="e#10192#10741#0" expanded="false" />
+            <element signature="e#10192#10515#1" expanded="false" />
+            <element signature="e#10778#10842#1" expanded="false" />
+            <element signature="e#12487#12503#0" expanded="false" />
+            <element signature="e#23195#23677#0" expanded="false" />
+            <element signature="e#23195#23279#1" expanded="false" />
+            <element signature="e#23384#23615#0" expanded="false" />
+            <element signature="e#23720#24024#0" expanded="false" />
+            <element signature="e#23778#23991#0" expanded="false" />
+            <element signature="e#24167#24524#0" expanded="false" />
+            <element signature="e#24208#24408#0" expanded="false" />
+            <element signature="e#24570#24805#0" expanded="false" />
+            <element signature="e#24858#26715#0" expanded="false" />
+            <element signature="e#26647#26715#0" expanded="false" />
+            <element signature="e#26892#27026#0" expanded="false" />
+            <element signature="e#27071#27205#0" expanded="false" />
+            <element signature="e#27258#27681#0" expanded="false" />
+            <element signature="e#27754#27997#0" expanded="false" />
+            <element signature="e#28041#28195#0" expanded="false" />
+            <element signature="e#28248#30631#0" expanded="false" />
+            <element signature="e#28537#29045#0" expanded="false" />
+            <element signature="e#28603#28788#0" expanded="false" />
+            <element signature="e#28844#29045#0" expanded="false" />
+            <element signature="e#28960#29045#0" expanded="false" />
+            <element signature="e#29115#29814#0" expanded="false" />
+            <element signature="e#29177#29455#0" expanded="false" />
+            <element signature="e#29325#29455#0" expanded="false" />
+            <element signature="e#29505#29814#0" expanded="false" />
+            <element signature="e#29941#30182#0" expanded="false" />
+            <element signature="e#29979#30182#0" expanded="false" />
+            <element signature="e#30260#30631#0" expanded="false" />
+            <element signature="e#30767#31788#0" expanded="false" />
+            <element signature="e#30784#31623#0" expanded="false" />
+            <element signature="e#31058#31623#0" expanded="false" />
+            <element signature="e#31348#31466#0" expanded="false" />
+            <element signature="e#31652#31739#0" expanded="false" />
+            <element signature="e#31832#33836#0" expanded="false" />
+            <element signature="e#32093#33688#0" expanded="false" />
+            <element signature="e#32142#33688#0" expanded="false" />
+            <element signature="e#32813#33688#0" expanded="false" />
+            <element signature="e#32853#32872#0" expanded="false" />
+            <element signature="e#33888#34074#0" expanded="false" />
+            <element signature="e#34128#34597#0" expanded="false" />
+            <element signature="e#34282#34393#0" expanded="false" />
+            <element signature="e#34438#34596#0" expanded="false" />
+            <element signature="e#34654#34776#0" expanded="false" />
+            <element signature="e#34820#35020#0" expanded="false" />
+            <element signature="e#35060#35650#0" expanded="false" />
+            <element signature="e#35165#35305#0" expanded="false" />
+            <element signature="e#35214#35305#0" expanded="false" />
+            <element signature="e#35346#35513#0" expanded="false" />
+            <element signature="e#35541#35650#0" expanded="false" />
+            <element signature="e#35787#37230#0" expanded="false" />
+            <element signature="e#37278#37645#0" expanded="false" />
+            <element signature="e#37377#37560#0" expanded="false" />
+            <element signature="e#37682#38201#0" expanded="false" />
+            <element signature="e#38435#38585#1" expanded="false" />
+            <element signature="e#38594#38609#0" expanded="false" />
+            <element signature="e#39357#39494#0" expanded="false" />
+            <element signature="e#39543#39856#0" expanded="false" />
+            <element signature="e#39699#39731#0" expanded="false" />
+            <element signature="e#39896#41118#0" expanded="false" />
+            <element signature="e#40379#40882#0" expanded="false" />
+            <element signature="e#40491#40882#0" expanded="false" />
+            <element signature="e#41155#41228#0" expanded="false" />
+            <element signature="e#41268#41331#0" expanded="false" />
+            <element signature="e#41381#43356#0" expanded="false" />
+            <element signature="e#41602#41778#0" expanded="false" />
+            <element signature="e#42038#42298#0" expanded="false" />
+            <element signature="e#42408#42497#0" expanded="false" />
+            <element signature="e#42526#42627#0" expanded="false" />
+            <element signature="e#43403#43698#0" expanded="false" />
+            <element signature="e#43501#43609#0" expanded="false" />
+            <element signature="e#43748#43841#0" expanded="false" />
+            <element signature="e#43976#44012#0" expanded="false" />
+            <element signature="e#44067#44628#0" expanded="false" />
+            <element signature="e#44679#46231#0" expanded="false" />
+            <element signature="e#45112#45205#0" expanded="false" />
+            <element signature="e#45234#45335#0" expanded="false" />
+            <element signature="e#45888#46005#0" expanded="false" />
+            <element signature="e#46034#46132#0" expanded="false" />
+            <element signature="e#48388#48479#0" expanded="false" />
+            <element signature="e#48617#48845#0" expanded="false" />
+            <element signature="e#48617#48724#1" expanded="false" />
+            <element signature="e#48886#49293#0" expanded="false" />
+            <element signature="e#49332#50033#0" expanded="false" />
+            <element signature="e#49332#49492#1" expanded="false" />
+            <element signature="e#49661#49729#0" expanded="false" />
+            <element signature="e#49833#49875#0" expanded="false" />
+            <element signature="e#50070#50760#0" expanded="false" />
+            <element signature="e#50070#50293#1" expanded="false" />
+            <element signature="e#50594#50614#0" expanded="false" />
+            <element signature="e#50805#53846#0" expanded="false" />
+            <element signature="e#50805#51029#1" expanded="false" />
+            <element signature="e#51055#53272#0" expanded="false" />
+            <element signature="e#51705#51930#0" expanded="false" />
+            <element signature="e#52049#52187#0" expanded="false" />
+            <element signature="e#52308#52434#0" expanded="false" />
+            <element signature="e#52537#52590#0" expanded="false" />
+            <element signature="e#52768#52874#1" expanded="false" />
+            <element signature="e#53019#53144#0" expanded="false" />
+            <element signature="e#53301#53846#0" expanded="false" />
+            <element signature="e#53343#53373#0" expanded="false" />
+            <element signature="e#53888#54783#0" expanded="false" />
+            <element signature="e#53888#54047#1" expanded="false" />
+            <element signature="e#54073#54691#0" expanded="false" />
+            <element signature="e#54720#54783#0" expanded="false" />
+            <element signature="e#54836#55337#0" expanded="false" />
+            <element signature="e#54836#55078#1" expanded="false" />
+            <element signature="e#55372#55616#0" expanded="false" />
+            <element signature="e#55372#55441#1" expanded="false" />
+            <element signature="e#55652#55977#0" expanded="false" />
+            <element signature="e#55652#55747#1" expanded="false" />
+            <element signature="e#56125#58852#0" expanded="false" />
+            <element signature="e#56125#56526#1" expanded="false" />
+            <element signature="e#56584#56685#0" expanded="false" />
+            <element signature="e#56769#56896#0" expanded="false" />
+            <element signature="e#57279#57376#0" expanded="false" />
+            <element signature="e#57456#57577#0" expanded="false" />
+            <element signature="e#58029#58852#0" expanded="false" />
+            <element signature="e#58320#58774#0" expanded="false" />
+            <element signature="e#58606#58774#0" expanded="false" />
+            <element signature="e#58901#61371#0" expanded="false" />
+            <element signature="e#58901#59212#1" expanded="false" />
+            <element signature="e#59250#59572#0" expanded="false" />
+            <element signature="e#59600#61371#0" expanded="false" />
+            <element signature="e#59941#60136#0" expanded="false" />
+            <element signature="e#60273#60471#0" expanded="false" />
+            <element signature="e#60688#60860#1" expanded="false" />
+            <element signature="e#60931#61371#0" expanded="false" />
+            <element signature="e#61111#61240#0" expanded="false" />
+            <element signature="e#61417#63349#0" expanded="false" />
+            <element signature="e#61417#61693#1" expanded="false" />
+            <element signature="e#62277#62348#1" expanded="false" />
+            <element signature="e#62394#62685#0" expanded="false" />
+            <element signature="e#62732#63026#0" expanded="false" />
+            <element signature="e#63054#63349#0" expanded="false" />
+            <element signature="e#63474#63710#0" expanded="false" />
+            <element signature="e#63753#64505#0" expanded="false" />
+            <element signature="e#63753#63940#1" expanded="false" />
+            <element signature="e#63982#64131#0" expanded="false" />
+            <element signature="e#64170#64317#0" expanded="false" />
+            <element signature="e#64357#64505#0" expanded="false" />
+            <element signature="e#64545#64900#0" expanded="false" />
+            <element signature="e#64545#64600#1" expanded="false" />
+            <element signature="e#65035#65133#0" expanded="false" />
+            <element signature="e#65190#65444#0" expanded="false" />
+            <element signature="e#65190#65381#1" expanded="false" />
+            <element signature="e#65493#65776#0" expanded="false" />
+            <element signature="e#65493#65670#1" expanded="false" />
+            <element signature="e#65826#66106#0" expanded="false" />
+            <element signature="e#65826#65996#1" expanded="false" />
+            <element signature="e#66142#66659#0" expanded="false" />
+            <element signature="e#66142#66287#1" expanded="false" />
+            <element signature="e#66695#67055#0" expanded="false" />
+            <element signature="e#66695#66765#1" expanded="false" />
+            <element signature="e#67091#67443#0" expanded="false" />
+            <element signature="e#67091#67153#1" expanded="false" />
+            <element signature="e#67479#67885#0" expanded="false" />
+            <element signature="e#67479#67558#1" expanded="false" />
+            <element signature="e#67919#68127#0" expanded="false" />
+            <element signature="e#67919#67974#1" expanded="false" />
+            <element signature="e#68163#68307#0" expanded="false" />
+            <element signature="e#68488#68817#0" expanded="false" />
+            <element signature="e#68488#68560#1" expanded="false" />
+            <element signature="e#69721#70009#0" expanded="false" />
+            <element signature="e#69928#70009#0" expanded="false" />
+            <element signature="e#70169#70303#0" expanded="false" />
+            <element signature="e#70230#70282#0" expanded="false" />
+            <element signature="e#70395#70532#0" expanded="false" />
+            <element signature="e#70459#70511#0" expanded="false" />
+            <element signature="e#70576#70753#0" expanded="false" />
+            <element signature="e#70791#71282#0" expanded="false" />
+            <element signature="e#71039#71112#0" expanded="false" />
+            <element signature="e#71324#71452#1" expanded="false" />
+            <element signature="e#71486#71989#0" expanded="false" />
+            <element signature="e#72018#72039#0" expanded="false" />
+            <element signature="e#73224#73881#0" expanded="false" />
+            <element signature="e#73973#74282#0" expanded="false" />
+            <element signature="e#74034#74282#0" expanded="false" />
+            <element signature="e#74780#74904#0" expanded="false" />
+            <element signature="e#75001#75927#0" expanded="false" />
+            <element signature="e#75026#75400#0" expanded="false" />
+            <element signature="e#75041#75325#0" expanded="false" />
+            <element signature="e#75454#75927#0" expanded="false" />
+            <element signature="e#75454#75534#0" expanded="false" />
+            <element signature="e#75964#75968#0" expanded="false" />
+            <element signature="e#76006#76010#0" expanded="false" />
+            <element signature="e#76055#76059#0" expanded="false" />
+            <element signature="e#76107#77665#0" expanded="false" />
+            <element signature="e#76135#76204#0" expanded="false" />
+            <element signature="e#76233#77665#0" expanded="false" />
+            <element signature="e#76436#77588#0" expanded="false" />
+            <element signature="e#76509#77463#0" expanded="false" />
+            <element signature="e#76547#76655#0" expanded="false" />
+            <element signature="e#77054#77206#0" expanded="false" />
+            <element signature="e#77097#77206#0" expanded="false" />
+            <element signature="e#77500#77588#0" expanded="false" />
+            <element signature="e#77712#78284#0" expanded="false" />
+            <element signature="e#77758#77848#0" expanded="false" />
+            <element signature="e#77878#78284#0" expanded="false" />
+            <element signature="e#78338#79263#0" expanded="false" />
+            <element signature="e#78422#78533#0" expanded="false" />
+            <element signature="e#78646#78847#0" expanded="false" />
+            <element signature="e#78688#78770#0" expanded="false" />
+            <element signature="e#78805#78847#0" expanded="false" />
+            <element signature="e#78971#79091#1" expanded="false" />
+            <element signature="e#79297#79737#0" expanded="false" />
+            <element signature="e#79336#79405#0" expanded="false" />
+            <element signature="e#79507#79536#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/octoprintAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14498">
+          <caret line="662" column="56" selection-start-line="662" selection-start-column="56" selection-end-line="662" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/config/wpa_supplicant.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/config/config_Julia2018ProSingleABLTouchUI.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/config/dhcpcd.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1408">
+          <caret line="66" column="52" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/mainGUI_pro_single_abl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2707,43 +3012,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/config/dhcpcd.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/config/wpa_supplicant.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/config/config_Julia2018ProSingleABLTouchUI.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/octoprintAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14498">
-          <caret line="662" column="56" selection-start-line="662" selection-start-column="56" selection-end-line="662" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
+        <state relative-caret-position="9086">
           <caret line="1032" column="44" selection-start-line="1032" selection-start-column="44" selection-end-line="1032" selection-end-column="44" />
           <folding>
             <element signature="e#19#285#1" expanded="false" />
@@ -2999,18 +3270,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/octoprintAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="813">
+          <caret line="662" column="56" selection-start-line="662" selection-start-column="56" selection-end-line="662" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="66" column="52" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+        <state relative-caret-position="615">
+          <caret line="76" column="27" selection-start-line="76" selection-start-column="27" selection-end-line="76" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/config/wpa_supplicant.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/config/dhcpcd.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+        <state relative-caret-position="374">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/config/config_Julia2018ProSingleABLTouchUI.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
           <folding />
         </state>
       </provider>
