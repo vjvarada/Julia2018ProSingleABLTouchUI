@@ -7,8 +7,7 @@ Touch UI for Julia 2018
 [ A simple getting started guide](https://nikolak.com/pyqt-qt-designer-getting-started/)
 
 
-1. PyQt4
-2. Qt Designer 4.8.7 ( requred to edit .ui file)
+1. PyQt4, Qt Designer and other Qt related dependencies from Development Repository (https://github.com/FracktalWorks/DevelopmentTools)
 3. Websocket client ( pip install websocket-client )
 4. other dependencies that "Main.py" needs (see it's headers)
 
