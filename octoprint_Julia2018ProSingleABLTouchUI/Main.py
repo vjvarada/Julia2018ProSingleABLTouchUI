@@ -1608,6 +1608,8 @@ class MainUiClass(QtGui.QMainWindow, mainGUI_pro_single_abl.Ui_MainWindow):
             os.system('sudo rm -rf /home/pi/.octoprint/scripts/gcode')
             os.system('sudo rm -rf /home/pi/.fw_logo.dat')
             os.system('sudo cp -f config/config_Julia2018ProSingleABLTouchUI.yaml /home/pi/.octoprint/config.yaml')
+            os.system('sudo rm -rf /home/pi/.fw_logo.dat')
+            os.system('sudo rm -rf /home/pi/.screendrv.dat')
             self.tellAndReboot("Settings restored. Rebooting...")
 
     def restorePrintDefaults(self):

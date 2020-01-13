@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c70e16e7-517b-4550-9f83-d2a2425b0e6f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/asset_bundle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Julia2018ProSingleABLTouchUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Julia2018ProSingleABLTouchUI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/mainGUI_pro_single_abl.ui" beforeDir="false" afterPath="$PROJECT_DIR$/octoprint_Julia2018ProSingleABLTouchUI/mainGUI_pro_single_abl.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
