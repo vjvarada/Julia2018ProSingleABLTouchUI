@@ -173,7 +173,7 @@ QStatusBar::item {
 background-color: rgb(40, 40, 40);</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="loadingPage">
      <widget class="QLabel" name="LoadingLabel">
@@ -458,7 +458,7 @@ QPushButton:focus {
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>../../Julia2018AdvancedTouchUI/octoprint_Julia2018AdvancedTouchUI/templates/img/backspace-arrow.png</normaloff>../../Julia2018AdvancedTouchUI/octoprint_Julia2018AdvancedTouchUI/templates/img/backspace-arrow.png</iconset>
+        <normaloff>templates/img/backspace-arrow.png</normaloff>templates/img/backspace-arrow.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -730,7 +730,7 @@ QPushButton:focus {
       </property>
       <property name="icon">
        <iconset>
-        <normaloff>../../Julia2018AdvancedTouchUI/octoprint_Julia2018AdvancedTouchUI/templates/img/verification-mark.png</normaloff>../../Julia2018AdvancedTouchUI/octoprint_Julia2018AdvancedTouchUI/templates/img/verification-mark.png</iconset>
+        <normaloff>templates/img/verification-mark.png</normaloff>templates/img/verification-mark.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -2393,7 +2393,7 @@ QScrollBar::down-arrow:vertical {
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>398</width>
+         <width>478</width>
          <height>630</height>
         </rect>
        </property>
