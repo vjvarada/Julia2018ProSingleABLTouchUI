@@ -7,19 +7,18 @@ Touch UI for Julia 2018
 [ A simple getting started guide](https://nikolak.com/pyqt-qt-designer-getting-started/)
 
 
-1. PyQt4
-2. Qt Designer 4.8.7 ( requred to edit .ui file)
+1. PyQt4, Qt Designer and other Qt related dependencies from Development Repository (https://github.com/FracktalWorks/DevelopmentTools)
 3. Websocket client ( pip install websocket-client )
 4. other dependencies that "Main.py" needs (see it's headers)
 
-The MainGUI.py file is generated from the Test2.ui file using
- ```pyuic4 .\Test2.ui -o .\mainGUI.py```
+The MainGUI.py file is generated from the mainGUI_pro_single_abl.ui file using
+```pyuic4 .\mainGUI_pro_single_abl.ui -o .\mainGUI_pro_single_abl.py```
 
 
 
 ## Running/Executing:
 
-**Octoprint needs to be running in prder for the Touch UI to work, since it uses octoprint's api functionality**
+**Octoprint needs to be running in order for the Touch UI to work, since it uses octoprint's api functionality**
 
 1. point the "ip"  and "apiKey" to where Octoprint is living. Point it to the local host in case it is running on the same system
 2. in case of running it on anything other than a raspberry pi, disable the raspberry pi option
