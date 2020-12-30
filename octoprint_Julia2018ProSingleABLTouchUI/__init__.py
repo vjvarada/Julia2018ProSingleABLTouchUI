@@ -74,7 +74,7 @@ class Julia2018ProSingleABLTouchUI(octoprint.plugin.StartupPlugin):
 
 
 __plugin_name__ = "Julia2018ProSingleABLTouchUI"
-__plugin_version__ = "1.0.0"
+__plugin_version__ = "1.0.1"
 
 
 def __plugin_load__():
